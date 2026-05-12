@@ -39,7 +39,7 @@
             font-weight: bold; 
             font-size: 0.875rem; 
         }
-        .nav-link:hover { color: #38bdf8; }
+        .nav-link:hover { color: #38bdf8; } 
         .age-badge { 
             background: linear-gradient(45deg, #ef4444, #f97316); 
             color: white; 
@@ -92,7 +92,7 @@
         <div class="text-center mb-12 bg-slate-800/50 p-6 rounded-3xl border border-slate-700">
             <div class="inline-block age-badge mb-4">13+ YEARS OLD</div>
             <h2 class="text-2xl md:text-3xl font-black text-white mb-2">Legal & Educational Center / المركز القانوني والتعليمي</h2>
-            <p class="text-cyan-400 font-bold">Last Updated / آخر تحديث: April 2, 2026</p>
+            <p class="text-cyan-400 font-bold">Last Updated / آخر تحديث: May 12, 2026</p>
         </div>
 
         <!-- ================= ENGLISH SECTION (FIRST FOR APP STORES) ================= -->
@@ -113,13 +113,14 @@
                             <li><b>Personal Data:</b> Full name, phone number, and date of birth (used solely for account verification and password recovery).</li>
                             <li><b>Device Integrity & Security:</b> We collect ANDROID_ID (Hardware ID) and FCM Tokens. These are critical for security, preventing multi-device fraud, and sending push notifications. We also check for Root/Jailbreak access to block compromised devices from accessing financial wallets.</li>
                             <li><b>Identity Images (Merchants Only):</b> To verify the legality of the commercial activity and network ownership.</li>
+                            <li><b>Transaction Data:</b> Target phone numbers for telecom recharges, Player IDs, and Zone IDs for gaming top-ups.</li>
                         </ul>
                     </section>
 
                     <section class="bg-slate-800/50 p-5 rounded-2xl border-l-4 border-cyan-500">
                         <h3 class="section-title text-white"><i data-lucide="shield-alert" class="w-5 h-5 text-cyan-500"></i> 2. Sensitive Permissions & Local Storage</h3>
                         <ul class="list-disc list-inside space-y-2 ml-4">
-                            <li><b>Camera Permission:</b> Used <span class="text-amber-400 font-bold">EXCLUSIVELY</span> to scan QR Codes for quick network login. We do not record video or capture background images.</li>
+                            <li><b>Camera Permission:</b> Used <span class="text-amber-400 font-bold">EXCLUSIVELY</span> to scan QR Codes for quick network login or voucher scanning. We do not record video or capture background images.</li>
                             <li><b>Storage/Photos Permission:</b> Used <span class="text-amber-400 font-bold">EXCLUSIVELY</span> for merchants to upload IDs/logos. No other personal files are accessed.</li>
                             <li><b>Location Data:</b> We <b>DO NOT</b> track your live GPS location. Network searching is done manually by selecting your region.</li>
                             <li><b>Local Storage:</b> We use local device storage to securely save your authentication tokens and purchased cards (Offline Vault).</li>
@@ -132,32 +133,22 @@
                     </section>
 
                     <section>
-                        <h3 class="section-title text-white"><i data-lucide="share-2" class="w-5 h-5 text-cyan-500"></i> 4. Third-Party Services & Security</h3>
-                        <p>We <b>do not sell</b> your data. We use Google Firebase solely for delivering push notifications and Socket.io for real-time updates. All data transmissions are secured using industry-standard <span class="highlight">HTTPS/SSL</span> encryption protocols.</p>
+                        <h3 class="section-title text-white"><i data-lucide="share-2" class="w-5 h-5 text-cyan-500"></i> 4. Third-Party Services & API Data Sharing</h3>
+                        <p>We <b>do not sell</b> your data. To process Telecom and Gaming top-ups, we securely transmit the target phone number or Player ID via APIs to our authorized third-party service providers. This data is strictly used for order fulfillment. We use Google Firebase solely for delivering push notifications and Socket.io for real-time updates. All data transmissions are secured using industry-standard <span class="highlight">HTTPS/SSL</span> encryption protocols.</p>
+                    </section>
+
+                    <section>
+                        <h3 class="section-title text-white"><i data-lucide="file-text" class="w-5 h-5 text-cyan-500"></i> 5. Audit & Transaction Logs</h3>
+                        <p>We retain transaction logs (including timestamps, amounts, status, and provider responses) for accounting, auditing, and dispute resolution purposes. Users can hide these logs from their interface, but they remain securely stored in our financial system to guarantee rights.</p>
                     </section>
 
                     <section class="bg-slate-800/50 p-5 rounded-2xl border-l-4 border-indigo-500">
-                        <h3 class="section-title text-white"><i data-lucide="refresh-cw" class="w-5 h-5 text-indigo-400"></i> 5. Changes to This Privacy Policy</h3>
+                        <h3 class="section-title text-white"><i data-lucide="refresh-cw" class="w-5 h-5 text-indigo-400"></i> 6. Changes to This Privacy Policy</h3>
                         <p>We reserve the right to update or change our Privacy Policy at any time. Users will be notified of any material changes via app notifications or by updating the "Last Updated" date at the top of this page. Your continued use of the application after any modifications constitutes your explicit consent to the new policy.</p>
                     </section>
 
-                    <section>
-                        <h3 class="section-title text-white"><i data-lucide="wallet" class="w-5 h-5 text-cyan-500"></i> 6. Financial Data Disclosure</h3>
-                        <p>"Shabakati CARDS" provides a digital accounting system to record sales and debts. We confirm that the balances and wallets within the app are <span class="highlight">digital records</span> corresponding to amounts paid in cash to merchants. The app does not provide direct electronic payment services or bank account linking.</p>
-                    </section>
-
-                    <section class="bg-slate-800/50 p-5 rounded-2xl border-l-4 border-cyan-500">
-                        <h3 class="section-title text-white"><i data-lucide="lock-keyhole" class="w-5 h-5 text-cyan-500"></i> 7. Data Security & Encryption</h3>
-                        <p>We adhere to the highest security standards. All data and wallet transactions transmitted between the app and the server are encrypted in transit using secure <span class="highlight">HTTPS (SSL/TLS)</span> protocols to protect your data from interception.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="section-title text-white"><i data-lucide="bell" class="w-5 h-5 text-cyan-500"></i> 8. Notification Data Handling</h3>
-                        <p>We use your device's Push Token via Google Firebase for the sole purpose of sending alerts for successful transactions, inventory updates, and administrative messages. This data is not used to track your activity outside the scope of the app's services.</p>
-                    </section>
-
                     <section class="bg-red-500/10 p-5 rounded-2xl border-l-4 border-red-500">
-                        <h3 class="section-title text-red-400"><i data-lucide="baby" class="w-5 h-5"></i> 9. Children's Privacy (Under 13 Policy)</h3>
+                        <h3 class="section-title text-red-400"><i data-lucide="baby" class="w-5 h-5"></i> 7. Children's Privacy (Under 13 Policy)</h3>
                         <p>The application is intended for users over 13 years old. We do not knowingly collect data from children under this age. If we discover an account belonging to an underage user, it and all associated data will be deleted immediately.</p>
                     </section>
                 </div>
@@ -169,57 +160,40 @@
                 <div class="space-y-6 text-slate-300 leading-relaxed text-sm md:text-base">
                     <section>
                         <h3 class="section-title text-white"><i data-lucide="info" class="w-5 h-5 text-amber-500"></i> 1. Technical Disclaimer (App Role)</h3>
-                        <p>"Shabakati CARDS" is strictly a <b>technical broker platform</b> providing accounting and sales solutions for local Wi-Fi networks. We do not own the networks, nor do we provide internet services. The merchant (network owner) is 100% responsible for internet quality, speed, and card validity.</p>
+                        <p>"Shabakati CARDS" is a <b>comprehensive digital services platform</b> providing accounting solutions for local Wi-Fi networks, as well as Telecom and Gaming top-ups. For local Wi-Fi, we do not own the networks, nor do we provide internet services. The merchant (network owner) is 100% responsible for internet quality, speed, and card validity.</p>
                     </section>
 
                     <section>
-                        <h3 class="section-title text-white"><i data-lucide="hand-coins" class="w-5 h-5 text-amber-500"></i> 2. Financial Disclaimer & Debt System</h3>
-                        <p>Wallet balances, the "Loan" (Salafni) system, and Agent credit limits represent a digital financial agreement strictly between the <b>customer and the merchant</b>. The app provides the accounting tool to record these transactions. Shabakati CARDS bears <b>no legal or financial responsibility</b> for debt collection, lost funds, or financial disputes between parties.</p>
+                        <h3 class="section-title text-white"><i data-lucide="hand-coins" class="w-5 h-5 text-amber-500"></i> 2. Financial Disclaimer & Wallets</h3>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li><b>Restricted Wallets (Local Wi-Fi):</b> Balances in these wallets represent a digital financial agreement strictly between the <b>customer and the local merchant</b>. The app provides the accounting tool to record these transactions. Shabakati CARDS bears no legal or financial responsibility for debt collection or disputes between these parties.</li>
+                            <li><b>Global Wallet & Merchant Payouts:</b> Users can top up a unified "Global Wallet" to purchase global services or local Wi-Fi cards. When a user purchases a local Wi-Fi card using the Global Wallet, the funds are automatically credited to the Merchant's <span class="highlight">Withdrawable Balance</span>. The App Administration acts as a financial guarantor and commits to transferring these accumulated profits to the merchant's designated bank account upon a valid withdrawal request, in accordance with applicable financial laws.</li>
+                        </ul>
+                    </section>
+
+                    <section class="bg-red-500/10 p-5 rounded-2xl border-l-4 border-red-500">
+                        <h3 class="section-title text-red-400"><i data-lucide="ban" class="w-5 h-5"></i> 3. Non-Refundable Transactions</h3>
+                        <p>All Telecom recharges and Game top-ups are <b>direct and final financial transactions</b>. Once an order is successfully processed and confirmed by the third-party provider, it cannot be canceled, and the amount cannot be refunded. The user bears full responsibility for entering the correct Phone Number or Player ID.</p>
                     </section>
 
                     <section>
-                        <h3 class="section-title text-white"><i data-lucide="gavel" class="w-5 h-5 text-amber-500"></i> 3. Fair Use, Bans & Device Integrity</h3>
+                        <h3 class="section-title text-white"><i data-lucide="map" class="w-5 h-5 text-amber-500"></i> 4. Currency & Geographical Variance</h3>
+                        <p>Due to regional economic variations and telecom billing zones, the app utilizes a smart dual-currency system (New/Old). Users must use the appropriate currency for their region's services to prevent billing errors. An internal exchange tool is provided to allow users to convert balances between wallets based on administration-approved exchange rates.</p>
+                    </section>
+
+                    <section>
+                        <h3 class="section-title text-white"><i data-lucide="gavel" class="w-5 h-5 text-amber-500"></i> 5. Fair Use, Bans & Device Integrity</h3>
                         <p>Management reserves the right to permanently ban any account caught manipulating the system. Furthermore, to protect financial wallets, the app <b>prohibits operation on <span class="highlight">Rooted or Jailbroken</span> devices</b>. Attempting to bypass this security measure will result in an immediate ban.</p>
                     </section>
 
                     <section class="bg-slate-800/50 p-5 rounded-2xl border-l-4 border-amber-500 mt-6">
-                        <h3 class="section-title text-white"><i data-lucide="copyright" class="w-5 h-5 text-amber-500"></i> 4. Intellectual Property & Licensing</h3>
+                        <h3 class="section-title text-white"><i data-lucide="copyright" class="w-5 h-5 text-amber-500"></i> 6. Intellectual Property & Licensing</h3>
                         <ul class="list-disc list-inside space-y-2 ml-4">
                             <li><b>Ownership:</b> The "Shabakati CARDS" application and all its components, including but not limited to (source code, UI designs, logos, graphics, and database structures), are the exclusive property of the developer/owner <b>Mohammed Abduljabbar Mahyoub</b>.</li>
                             <li><b>Anti-Piracy & Imitation:</b> It is strictly prohibited to copy, imitate, or perform reverse engineering on any part of the application or its technical concept. Any attempt to create a similar project using the same resources, designs, or system architecture without prior written consent will lead to legal action.</li>
                             <li><b>Usage License:</b> We grant the user (merchant or customer) a limited, non-exclusive, non-transferable license to use the app services solely for its intended purposes. Your use of the app does not constitute a transfer of any ownership rights of the project to you.</li>
                         </ul>
                     </section>
-                </div>
-            </div>
-
-            <!-- 3. User Guide & FAQ (EN) -->
-            <div id="en-guide" class="glass-panel rounded-3xl p-6 md:p-10 shadow-xl">
-                <h2 class="text-2xl font-bold text-emerald-400 mb-6 border-b border-slate-700 pb-4 flex items-center gap-2"><i data-lucide="book-open" class="w-6 h-6"></i> Part 3: User Guide & FAQ</h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
-                        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="user" class="text-emerald-400"></i> For Customers</h3>
-                        <ul class="space-y-4 text-sm text-slate-300">
-                            <li><b class="text-emerald-300">1. Smart Search:</b> Find networks by selecting your region manually without needing GPS.</li>
-                            <li><b class="text-emerald-300">2. Restricted Wallets:</b> Your balance is safely isolated per network.</li>
-                            <li><b class="text-emerald-300">3. Direct Login:</b> Buy a card and click "Direct Login" to connect instantly without typing codes.</li>
-                            <li><b class="text-emerald-300">4. Offline Vault:</b> Save purchased cards locally. Access them anytime, even without an internet connection!</li>
-                            <li><b class="text-emerald-300">5. Biometric Lock:</b> Secure your app and wallet using your fingerprint or a custom PIN.</li>
-                            <li><b class="text-emerald-300">6. Send Gifts:</b> Purchase cards and send them directly to your friends using their App ID.</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
-                        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="store" class="text-emerald-400"></i> For Merchants</h3>
-                        <ul class="space-y-4 text-sm text-slate-300">
-                            <li><b class="text-emerald-300">1. Bulk Upload:</b> Copy hundreds of codes from Mikrotik and paste them into the app with one click.</li>
-                            <li><b class="text-emerald-300">2. ERP Debt System:</b> Manage agents, set credit limits, and track payments seamlessly.</li>
-                            <li><b class="text-emerald-300">3. Brand Identity:</b> Upload your logo, cover image, and display animated ad tickers to your customers.</li>
-                            <li><b class="text-emerald-300">4. Notification Center:</b> Send promotional push notifications directly to your customers' phones.</li>
-                            <li><b class="text-emerald-300">5. Bulk Printing:</b> Print multiple cards at once using any Bluetooth/Wi-Fi thermal printer directly from the app.</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -249,13 +223,14 @@
                             <li><b>البيانات الشخصية:</b> الاسم الرباعي، رقم الهاتف، وتاريخ الميلاد (تُستخدم حصرياً لتوثيق الحسابات واستعادة كلمة المرور).</li>
                             <li><b>سلامة الجهاز ومعرفاته:</b> نجمع معرف الجهاز (ANDROID_ID) ورمز الإشعارات (FCM Token) لمنع الاحتيال وتعدد الحسابات. كما نقوم بفحص حالة حماية الجهاز (Root Check) ونقوم بحظر الأجهزة مكسورة الحماية لحماية المحافظ المالية.</li>
                             <li><b>صور الهوية (للتجار فقط):</b> للتحقق من قانونية النشاط التجاري وملكية الشبكة.</li>
+                            <li><b>بيانات تنفيذ الطلبات:</b> أرقام الهواتف المراد تسديدها، معرفات اللاعبين (Player ID)، ومعرفات المناطق (Zone ID) الخاصة بشحن الألعاب.</li>
                         </ul>
                     </section>
 
                     <section class="bg-slate-800/50 p-5 rounded-2xl border-r-4 border-cyan-500">
                         <h3 class="section-title text-white"><i data-lucide="shield-alert" class="w-5 h-5 text-cyan-500"></i> 2. الأذونات الحساسة والتخزين المحلي</h3>
                         <ul class="list-disc list-inside space-y-2">
-                            <li><b>إذن الكاميرا:</b> يُستخدم <span class="text-amber-400 font-bold">حصرياً</span> لممسح رموز (QR Codes) لتسهيل تسجيل الدخول للشبكات. لا نقوم بتسجيل أي فيديو أو التقاط صور في الخلفية.</li>
+                            <li><b>إذن الكاميرا:</b> يُستخدم <span class="text-amber-400 font-bold">حصرياً</span> لمسح رموز (QR Codes) لتسهيل تسجيل الدخول للشبكات أو شحن المحفظة. لا نقوم بتسجيل أي فيديو أو التقاط صور في الخلفية.</li>
                             <li><b>بيانات الموقع (Location):</b> نحن <b>لا نقوم</b> بتتبع موقعك الجغرافي (GPS). يتم البحث عن الشبكات يدوياً عبر اختيار المحافظة والمديرية للحفاظ على خصوصيتك.</li>
                             <li><b>التخزين المحلي (Local Storage):</b> نستخدم ذاكرة هاتفك المحلية لحفظ بيانات تسجيل الدخول والكروت المشتراة (الخزنة) لتتمكن من استخدامها بدون إنترنت.</li>
                         </ul>
@@ -267,32 +242,22 @@
                     </section>
 
                     <section>
-                        <h3 class="section-title text-white"><i data-lucide="share-2" class="w-5 h-5 text-cyan-500"></i> 4. مشاركة البيانات وأمنها</h3>
-                        <p>نحن <b>لا نبيع</b> بياناتك لأي طرف ثالث. نستخدم فقط خدمة <b>Google Firebase</b> لإرسال الإشعارات و <b>Socket.io</b> للتحديثات اللحظية. يتم نقل جميع بياناتك عبر بروتوكولات تشفير آمنة (<span class="highlight">HTTPS/SSL</span>) لحمايتها من الاختراق.</p>
+                        <h3 class="section-title text-white"><i data-lucide="share-2" class="w-5 h-5 text-cyan-500"></i> 4. مشاركة البيانات مع أطراف ثالثة (APIs)</h3>
+                        <p>نحن <b>لا نبيع</b> بياناتك لأي طرف ثالث. لتنفيذ طلبات شحن الألعاب وتسديد الاتصالات، نقوم بمشاركة (رقم الهاتف المستهدف أو معرف اللاعب) آلياً عبر واجهات برمجة التطبيقات (APIs) مع مزودي الخدمة المعتمدين. هذا الاستخدام مقتصر حصرياً على تنفيذ الطلب بنجاح ولا يُستخدم لأي أغراض تسويقية. كما نستخدم خدمة Google Firebase لإرسال الإشعارات، ويتم نقل جميع بياناتك عبر بروتوكولات تشفير آمنة (<span class="highlight">HTTPS/SSL</span>).</p>
+                    </section>
+
+                    <section>
+                        <h3 class="section-title text-white"><i data-lucide="file-text" class="w-5 h-5 text-cyan-500"></i> 5. سجل العمليات والتدقيق</h3>
+                        <p>نحتفظ بسجل دقيق للعمليات المالية (التاريخ، المبلغ، حالة الطلب، ورد المزود) لأغراض المحاسبة، تتبع الطلبات، وحل النزاعات. يمكن للمستخدم إخفاء هذا السجل من واجهته، لكنه يبقى محفوظاً في النظام المالي للإدارة لضمان حقوق جميع الأطراف.</p>
                     </section>
 
                     <section class="bg-slate-800/50 p-5 rounded-2xl border-r-4 border-indigo-500">
-                        <h3 class="section-title text-white"><i data-lucide="refresh-cw" class="w-5 h-5 text-indigo-400"></i> 5. تعديل سياسة الخصوصية</h3>
+                        <h3 class="section-title text-white"><i data-lucide="refresh-cw" class="w-5 h-5 text-indigo-400"></i> 6. تعديل سياسة الخصوصية</h3>
                         <p>نحتفظ بالحق في تحديث أو تغيير سياسة الخصوصية الخاصة بنا في أي وقت. سيتم إخطار المستخدمين بأي تغييرات جوهرية عبر إشعارات التطبيق أو بتحديث تاريخ "آخر تحديث" في أعلى هذه الصفحة. استمرارك في استخدام التطبيق بعد أي تعديل يعني موافقتك الصريحة على السياسة الجديدة.</p>
                     </section>
 
-                    <section>
-                        <h3 class="section-title text-white"><i data-lucide="wallet" class="w-5 h-5 text-cyan-500"></i> 6. إخلاء مسؤولية بخصوص البيانات المالية</h3>
-                        <p>تطبيق "شبكتي كاردس" يوفر نظاماً محاسبياً رقمياً لتسجيل المبيعات والديون. نؤكد أن الأرصدة والمحافظ داخل التطبيق هي <span class="highlight">سجلات رقمية</span> مقابل مبالغ يتم دفعها نقداً للتجار، ولا يقدم التطبيق أي خدمات دفع إلكتروني أو ربط حسابات بنكية مباشرة.</p>
-                    </section>
-
-                    <section class="bg-slate-800/50 p-5 rounded-2xl border-r-4 border-cyan-500">
-                        <h3 class="section-title text-white"><i data-lucide="lock-keyhole" class="w-5 h-5 text-cyan-500"></i> 7. أمن وتشفير البيانات</h3>
-                        <p>نحن نلتزم بأعلى معايير الأمان؛ حيث يتم نقل جميع البيانات وحركات المحافظ بين التطبيق والسيرفر عبر بروتوكول (HTTPS) المشفر بتشفير (<span class="highlight">SSL/TLS</span>) لحماية بياناتك من أي محاولات اعتراض.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="section-title text-white"><i data-lucide="bell" class="w-5 h-5 text-cyan-500"></i> 8. بيانات الإشعارات (Push Notifications)</h3>
-                        <p>نستخدم "رمز الجهاز" (Push Token) عبر خدمة Google Firebase لغرض وحيد وهو إرسال تنبيهات العمليات الناجحة، وتحديثات المخزون، ورسائل الإدارة. هذه البيانات لا تُستخدم لتتبع نشاطك خارج نطاق خدمات التطبيق.</p>
-                    </section>
-
                     <section class="bg-red-500/10 p-5 rounded-2xl border-r-4 border-red-500">
-                        <h3 class="section-title text-red-400"><i data-lucide="baby" class="w-5 h-5"></i> 9. حماية خصوصية الأطفال</h3>
+                        <h3 class="section-title text-red-400"><i data-lucide="baby" class="w-5 h-5"></i> 7. حماية خصوصية الأطفال</h3>
                         <p>التطبيق مخصص لمن هم فوق 13 عاماً. نحن لا نجمع أي بيانات من الأطفال تحت هذا السن عن علم، وفي حال تبين لنا وجود حساب لمستخدم دون السن القانوني، سيتم حذفه وكافة بياناته فوراً.</p>
                     </section>
                 </div>
@@ -304,21 +269,34 @@
                 <div class="space-y-6 text-slate-300 leading-relaxed text-sm md:text-base">
                     <section>
                         <h3 class="section-title text-white"><i data-lucide="info" class="w-5 h-5 text-amber-500"></i> 1. إخلاء المسؤولية التقنية</h3>
-                        <p>تطبيق "شبكتي كاردس" هو <b>منصة وسيطة (أداة برمجية)</b> توفر حلولاً لبيع وإدارة كروت شبكات الإنترنت المحلية. التطبيق لا يمتلك الشبكات ولا يزود خدمة الإنترنت. تقع مسؤولية جودة الإنترنت، سرعته، وصلاحية الكروت بالكامل على عاتق <b>التاجر (صاحب الشبكة)</b>.</p>
+                        <p>تطبيق "شبكتي كاردس" هو <b>منصة خدمات رقمية شاملة</b> توفر حلولاً لبيع كروت شبكات الإنترنت المحلية، وتسديد الاتصالات، وشحن الألعاب. فيما يخص شبكات الواي فاي المحلية، التطبيق لا يمتلك الشبكات ولا يزود خدمة الإنترنت. تقع مسؤولية جودة الإنترنت، سرعته، وصلاحية الكروت بالكامل على عاتق <b>التاجر (صاحب الشبكة)</b>.</p>
                     </section>
 
                     <section>
-                        <h3 class="section-title text-white"><i data-lucide="hand-coins" class="w-5 h-5 text-amber-500"></i> 2. إخلاء المسؤولية المالي (نظام الديون والمحافظ)</h3>
-                        <p>الأرصدة الموجودة في المحافظ، ونظام (سلفني)، وسقف ديون الوكلاء هي عبارة عن سجلات رقمية تمثل اتفاقاً مالياً بين <b>العميل والتاجر</b>. التطبيق يوفر الأداة المحاسبية لتسجيل هذه الحركات فقط، و<b>لا يتحمل أي مسؤولية قانونية أو مالية</b> عن تحصيل الديون، ضياع الأموال، أو الخلافات المالية بين الأطراف.</p>
+                        <h3 class="section-title text-white"><i data-lucide="hand-coins" class="w-5 h-5 text-amber-500"></i> 2. إخلاء المسؤولية المالي (المحافظ وسحب الأرباح)</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><b>المحافظ المقيدة (شبكات الواي فاي):</b> الأرصدة الموجودة فيها ونظام (سلفني) هي عبارة عن سجلات رقمية تمثل اتفاقاً مالياً بين <b>العميل والتاجر المحلي</b>. التطبيق يوفر الأداة المحاسبية لتسجيل هذه الحركات فقط، ولا يتحمل أي مسؤولية قانونية عن تحصيل الديون بين الأطراف.</li>
+                            <li><b>المحفظة العامة وسحب أرباح التجار:</b> يوفر التطبيق (محفظة عامة) موحدة للعملاء. في حال قام العميل بشراء كرت واي فاي محلي باستخدام رصيد المحفظة العامة، يقوم النظام تلقائياً بتحويل قيمة الكرت إلى <span class="highlight">(رصيد قابل للسحب)</span> في حساب التاجر. تلتزم إدارة التطبيق كضامن مالي بتحويل هذه الأرباح المتراكمة إلى الحسابات البنكية أو المصرفية للتاجر عند تقديمه لطلب سحب صحيح، وفقاً للقوانين المالية المعمول بها.</li>
+                        </ul>
+                    </section>
+
+                    <section class="bg-red-500/10 p-5 rounded-2xl border-r-4 border-red-500">
+                        <h3 class="section-title text-red-400"><i data-lucide="ban" class="w-5 h-5"></i> 3. نهائية العمليات وعدم الاسترجاع</h3>
+                        <p>عمليات تسديد الاتصالات وشحن الألعاب وتطبيقات الدردشة هي <b>عمليات مالية مباشرة ونهائية</b>. بمجرد تنفيذ الطلب بنجاح وتأكيده من قبل مزود الخدمة (الطرف الثالث)، لا يمكن إلغاء العملية أو استرداد المبلغ بأي حال من الأحوال. تقع مسؤولية إدخال رقم الهاتف أو معرف اللاعب (ID) الصحيح على عاتق المستخدم بالكامل.</p>
                     </section>
 
                     <section>
-                        <h3 class="section-title text-white"><i data-lucide="gavel" class="w-5 h-5 text-amber-500"></i> 3. الاستخدام العادل وسلامة الجهاز</h3>
+                        <h3 class="section-title text-white"><i data-lucide="map" class="w-5 h-5 text-amber-500"></i> 4. التباين الجغرافي والعملات (المصارفة)</h3>
+                        <p>نظراً للتباين الجغرافي والاقتصادي ومناطق التحصيل الخاصة بشركات الاتصالات، يوفر التطبيق نظاماً ذكياً يفصل بين الأرصدة (عملة قديمة / عملة جديدة) لحماية المستخدم من أخطاء الشحن. يجب على المستخدم استخدام العملة المتوافقة مع منطقته. كما يوفر التطبيق أداة (مصارفة) داخلية تتيح للمستخدم تحويل أرصدته بين المحافظ وفقاً لأسعار الصرف والرسوم المعتمدة من قبل الإدارة.</p>
+                    </section>
+
+                    <section>
+                        <h3 class="section-title text-white"><i data-lucide="gavel" class="w-5 h-5 text-amber-500"></i> 5. الاستخدام العادل وسلامة الجهاز</h3>
                         <p>لحماية المحافظ المالية وبيانات الكروت، <b>يحظر التطبيق العمل على الأجهزة <span class="highlight">مكسورة الحماية (Rooted/Jailbroken)</span></b> لضمان بيئة عمل آمنة ومنع التلاعب. يحق للإدارة حظر أي حساب يثبت تلاعبه بالنظام دون سابق إنذار.</p>
                     </section>
 
                     <section class="bg-slate-800/50 p-5 rounded-2xl border-r-4 border-amber-500 mt-6">
-                        <h3 class="section-title text-white"><i data-lucide="copyright" class="w-5 h-5 text-amber-500"></i> 4. حقوق الملكية الفكرية والترخيص</h3>
+                        <h3 class="section-title text-white"><i data-lucide="copyright" class="w-5 h-5 text-amber-500"></i> 6. حقوق الملكية الفكرية والترخيص</h3>
                         <ul class="list-disc list-inside space-y-2">
                             <li><b>حقوق الملكية:</b> إن تطبيق "شبكتي كاردس" (Shabakati CARDS) بكافة محتوياته، بما في ذلك على سبيل المثال لا الحصر (الكود البرمجي، التصميمات الواجهة، الشعارات، الرسوم البيانية، وقاعدة البيانات)، هو ملكية حصرية للمطور المالك لهذا المشروع المهندس <b>محمد عبدالجبار مهيوب</b>.</li>
                             <li><b>حظر التقليد والنسخ:</b> يُمنع منعاً باتاً نسخ أو تقليد أو هندسة عكسية (Reverse Engineering) لأي جزء من التطبيق أو فكرته التقنية. أي محاولة لإنشاء مشروع مشابه باستخدام نفس الموارد أو التصاميم أو بنية النظام دون إذن كتابي مسبق، ستعرض صاحبها للمساءلة القانونية.</li>
@@ -337,13 +315,12 @@
                     <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
                         <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="user" class="text-emerald-400"></i> دليل العملاء</h3>
                         <ul class="space-y-4 text-sm text-slate-300">
-                            <li><b class="text-emerald-300">1. البحث الذكي:</b> ابحث عن الشبكات القريبة منك عبر اختيار المحافظة والمديرية يدوياً دون الحاجة لتفعيل الـ GPS.</li>
-                            <li><b class="text-emerald-300">2. المحفظة الرقمية المقيدة:</b> لكل شبكة تشتري منها محفظة خاصة، مما يضمن فصل أموالك وحمايتها.</li>
-                            <li><b class="text-emerald-300">3. الشراء والدخول التلقائي:</b> بمجرد الشراء، اضغط على "تسجيل دخول مباشر" لتدخل للإنترنت دون الحاجة لكتابة الكود يدوياً.</li>
+                            <li><b class="text-emerald-300">1. المحفظة العامة:</b> اشحن رصيدك الموحد واستخدمه لتسديد الاتصالات، شحن الألعاب، أو شراء كروت الواي فاي من أي شبكة.</li>
+                            <li><b class="text-emerald-300">2. المحفظة الرقمية المقيدة:</b> لكل شبكة واي فاي تشتري منها محفظة خاصة، مما يضمن فصل أموالك وحمايتها.</li>
+                            <li><b class="text-emerald-300">3. الشراء والدخول التلقائي:</b> بمجرد شراء كرت واي فاي، اضغط على "تسجيل دخول مباشر" لتدخل للإنترنت دون الحاجة لكتابة الكود يدوياً.</li>
                             <li><b class="text-emerald-300">4. الخزنة المحلية (Offline Vault):</b> احفظ الكروت في هاتفك واستخدمها لاحقاً حتى لو انقطع عنك الإنترنت تماماً!</li>
                             <li><b class="text-emerald-300">5. نظام السلفة (سلفني):</b> إذا سمح التاجر، يمكنك أخذ كرت دين وسداد قيمته تلقائياً عند شحن رصيدك المرة القادمة.</li>
                             <li><b class="text-emerald-300">6. قفل البصمة (Biometric Lock):</b> احمِ محفظتك وأكوادك عبر قفل التطبيق ببصمة الإصبع أو رمز PIN.</li>
-                            <li><b class="text-emerald-300">7. إرسال الهدايا:</b> يمكنك شراء كرت وإرساله كهدية لصديقك مباشرة عبر إدخال رقم الـ ID الخاص به.</li>
                         </ul>
                     </div>
 
@@ -351,7 +328,7 @@
                     <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
                         <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="store" class="text-emerald-400"></i> دليل التجار والوكلاء</h3>
                         <ul class="space-y-4 text-sm text-slate-300">
-                            <li><b class="text-emerald-300">1. لوحة الإحصائيات:</b> راقب مبيعاتك لحظة بلحظة مع رسوم بيانية توضح نمو نشاطك.</li>
+                            <li><b class="text-emerald-300">1. سحب الأرباح:</b> مبيعاتك التي تتم عبر المحفظة العامة تتحول لرصيد قابل للسحب، يمكنك طلبه لحسابك البنكي في أي وقت.</li>
                             <li><b class="text-emerald-300">2. الرفع المجمع (Bulk Upload):</b> انسخ مئات الأكواد من الميكروتيك والصقها دفعة واحدة في التطبيق بضغطة زر.</li>
                             <li><b class="text-emerald-300">3. نظام ديون الوكلاء (ERP):</b> حول رصيداً للوكلاء، حدد سقف الدين المسموح، وسجل الدفعات المسددة لضمان عدم ضياع أموالك.</li>
                             <li><b class="text-emerald-300">4. الهوية والإعلانات:</b> ارفع شعارك، صورة الغلاف، وأضف شريطاً إخبارياً (Ticker) لعروضك ليراه العملاء.</li>
@@ -371,8 +348,12 @@
                         <p>ج: لا تقلق، جميع الكروت التي تشتريها تُحفظ تلقائياً في قسم (سجلاتي). يمكنك العودة إليها في أي وقت ونسخ الكود مجدداً.</p>
                     </div>
                     <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
+                        <b class="text-indigo-300 block mb-1">س: هل يمكنني التراجع عن شحن لعبة أو تسديد رقم؟</b>
+                        <p>ج: لا، عمليات شحن الألعاب وتسديد الاتصالات تتم بشكل آلي وفوري مع مزود الخدمة، ولا يمكن التراجع عنها أو استرداد المبلغ بعد نجاحها.</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
                         <b class="text-indigo-300 block mb-1">س: كيف يعمل نظام السلفة (سلفني)؟</b>
-                        <p>ج: إذا قام التاجر بتفعيل هذه الميزة، يمكنك أخذ كرت كسلفة. سيتحول رصيدك في المحفظة إلى السالب، وعندما تقوم بشحن رصيدك المرة القادمة، سيقوم النظام تلقائياً بخصم قيمة السلفة.</p>
+                        <p>ج: إذا قام تاجر الواي فاي بتفعيل هذه الميزة، يمكنك أخذ كرت كسلفة. سيتحول رصيدك في المحفظة المقيدة إلى السالب، وعندما تقوم بشحن رصيدك المرة القادمة، سيقوم النظام تلقائياً بخصم قيمة السلفة.</p>
                     </div>
                     <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
                         <b class="text-indigo-300 block mb-1">س: هل التطبيق آمن؟</b>
