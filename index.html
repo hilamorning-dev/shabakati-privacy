@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>السياسات ودليل الاستخدام - شبكتي كاردس | Policies & Guide</title>
-    <!-- تم استبدال الملفات المحلية بروابط CDN لتعمل الصفحة بشكل مستقل على GitHub Pages -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
-        /* التنسيقات الداخلية لضمان سرعة التحميل وعدم تشوه الصفحة (Store Compliance) */
         body { 
             font-family: 'Cairo', sans-serif; 
             background-color: #0f172a; 
             color: #e2e8f0; 
-            line-height: 1.8; /* تحسين مقروئية النصوص الطويلة */
+            line-height: 1.8; 
         }
         .glass-panel { 
             background: rgba(30, 41, 59, 0.7); 
@@ -49,7 +47,6 @@
             font-size: 0.75rem; 
             letter-spacing: 1px; 
         }
-        /* كلاس التمييز للكلمات القانونية الهامة */
         .highlight { 
             color: #fbbf24; 
             font-weight: bold; 
@@ -61,7 +58,6 @@
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- Header -->
     <header class="bg-slate-900 border-b border-slate-800 py-4 sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-3">
@@ -88,21 +84,19 @@
 
     <main class="flex-1 container mx-auto px-4 py-8 max-w-5xl">
         
-        <!-- Global Info Banner -->
         <div class="text-center mb-12 bg-slate-800/50 p-6 rounded-3xl border border-slate-700">
             <div class="inline-block age-badge mb-4">13+ YEARS OLD</div>
             <h2 class="text-2xl md:text-3xl font-black text-white mb-2">Legal & Educational Center / المركز القانوني والتعليمي</h2>
             <p class="text-cyan-400 font-bold">Last Updated / آخر تحديث: May 12, 2026</p>
         </div>
 
-        <!-- ================= ENGLISH SECTION (FIRST FOR APP STORES) ================= -->
+        <!-- ================= ENGLISH SECTION ================= -->
         <div class="en-section mb-16">
             <div class="mb-8">
                 <h2 class="text-4xl font-black text-white mb-2">English Policies & Guide</h2>
                 <p class="text-slate-400">Please read carefully before using Shabakati CARDS.</p>
             </div>
 
-            <!-- 1. Privacy Policy (EN) -->
             <div id="en-privacy" class="glass-panel rounded-3xl p-6 md:p-10 mb-8 shadow-xl">
                 <h2 class="text-2xl font-bold text-cyan-400 mb-6 border-b border-slate-700 pb-4 flex items-center gap-2"><i data-lucide="lock" class="w-6 h-6"></i> Part 1: Privacy Policy</h2>
                 <div class="space-y-6 text-slate-300 leading-relaxed text-sm md:text-base">
@@ -111,7 +105,8 @@
                         <p class="mb-2">This application is strictly for users aged <span class="highlight">13 years and older</span>. We collect the following data to ensure service functionality:</p>
                         <ul class="list-disc list-inside space-y-2 ml-4">
                             <li><b>Personal Data:</b> Full name, phone number, and date of birth (used solely for account verification and password recovery).</li>
-                            <li><b>Device Integrity & Security:</b> We collect ANDROID_ID (Hardware ID) and FCM Tokens. These are critical for security, preventing multi-device fraud, and sending push notifications. We also check for Root/Jailbreak access to block compromised devices from accessing financial wallets.</li>
+                            <li><b>Device Integrity & Security:</b> We collect ANDROID_ID (Hardware ID) and FCM Tokens. These are critical for security, preventing multi-device fraud, and sending push notifications. We also check for Root/Jailbreak access to block compromised devices.</li>
+                            <li><b>Technical & Usage Data:</b> IP address, device type, operating system version, and crash logs. This data is used exclusively to improve app performance, detect bugs, and prevent fraud.</li>
                             <li><b>Identity Images (Merchants Only):</b> To verify the legality of the commercial activity and network ownership.</li>
                             <li><b>Transaction Data:</b> Target phone numbers for telecom recharges, Player IDs, and Zone IDs for gaming top-ups.</li>
                         </ul>
@@ -122,6 +117,7 @@
                         <ul class="list-disc list-inside space-y-2 ml-4">
                             <li><b>Camera Permission:</b> Used <span class="text-amber-400 font-bold">EXCLUSIVELY</span> to scan QR Codes for quick network login or voucher scanning. We do not record video or capture background images.</li>
                             <li><b>Storage/Photos Permission:</b> Used <span class="text-amber-400 font-bold">EXCLUSIVELY</span> for merchants to upload IDs/logos. No other personal files are accessed.</li>
+                            <li><b>Biometric Data (Fingerprint/FaceID):</b> Used for local app locking. Your biometric data is processed securely on your device and is <b>NEVER</b> transmitted to or stored on our servers.</li>
                             <li><b>Location Data:</b> We <b>DO NOT</b> track your live GPS location. Network searching is done manually by selecting your region.</li>
                             <li><b>Local Storage:</b> We use local device storage to securely save your authentication tokens and purchased cards (Offline Vault).</li>
                         </ul>
@@ -129,12 +125,17 @@
 
                     <section class="bg-red-500/10 p-5 rounded-2xl border-l-4 border-red-500">
                         <h3 class="section-title text-red-400"><i data-lucide="trash-2" class="w-5 h-5"></i> 3. User Rights & Account Deletion</h3>
-                        <p>You have full control over your data. The app provides an <b>"Account Deletion"</b> feature in the Profile page. Requesting this will immediately and permanently erase all your personal data, transaction records, and uploaded images from our servers. This action is irreversible.</p>
+                        <p>You have full control over your data. The app provides an <b>"Account Deletion"</b> feature in the Profile page.</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4 mt-2">
+                            <li><b>Deletion Scope:</b> For normal users, personal data and device identifiers are permanently deleted. For merchants, uploaded identity and network images are also deleted.</li>
+                            <li><b>Legal Exception:</b> Financial transaction logs (top-ups, transfers) are retained securely for accounting, auditing, and dispute resolution purposes as required by law.</li>
+                            <li><b>Out-of-App Deletion:</b> If you have uninstalled the app, you can request account deletion by contacting our support via WhatsApp (+967739100231) or email (support@shabakati.com). Your request will be processed within 7 days.</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h3 class="section-title text-white"><i data-lucide="share-2" class="w-5 h-5 text-cyan-500"></i> 4. Third-Party Services & API Data Sharing</h3>
-                        <p>We <b>do not sell</b> your data. To process Telecom and Gaming top-ups, we securely transmit the target phone number or Player ID via APIs to our authorized third-party service providers. This data is strictly used for order fulfillment. We use Google Firebase solely for delivering push notifications and Socket.io for real-time updates. All data transmissions are secured using industry-standard <span class="highlight">HTTPS/SSL</span> encryption protocols.</p>
+                        <p>We <b>do not sell</b> your data. To process Telecom and Gaming top-ups, we securely transmit <b>only the necessary data</b> (target phone number, Player ID, or Zone ID) via APIs to our authorized third-party service providers. We do not share your name, personal phone number, or password with any third party. We use Google Firebase solely for delivering push notifications. All data transmissions are secured using industry-standard <span class="highlight">HTTPS/SSL</span> encryption protocols.</p>
                     </section>
 
                     <section>
@@ -149,12 +150,11 @@
 
                     <section class="bg-red-500/10 p-5 rounded-2xl border-l-4 border-red-500">
                         <h3 class="section-title text-red-400"><i data-lucide="baby" class="w-5 h-5"></i> 7. Children's Privacy (Under 13 Policy)</h3>
-                        <p>The application is intended for users over 13 years old. We do not knowingly collect data from children under this age. If we discover an account belonging to an underage user, it and all associated data will be deleted immediately.</p>
+                        <p>The application is intended for users over 13 years old. We do not knowingly collect data from children under this age. If we discover that we have collected personal data from a child under the legal age without parental consent, we will take immediate steps to delete that information and the associated account from our servers.</p>
                     </section>
                 </div>
             </div>
 
-            <!-- 2. Terms of Service (EN) -->
             <div id="en-terms" class="glass-panel rounded-3xl p-6 md:p-10 mb-8 shadow-xl">
                 <h2 class="text-2xl font-bold text-amber-400 mb-6 border-b border-slate-700 pb-4 flex items-center gap-2"><i data-lucide="scale" class="w-6 h-6"></i> Part 2: Terms of Service</h2>
                 <div class="space-y-6 text-slate-300 leading-relaxed text-sm md:text-base">
@@ -198,7 +198,6 @@
             </div>
         </div>
 
-        <!-- Divider -->
         <div class="flex items-center justify-center gap-4 mb-16 opacity-50">
             <div class="h-px bg-slate-600 flex-1"></div>
             <i data-lucide="globe" class="text-slate-400 w-8 h-8"></i>
@@ -212,7 +211,6 @@
                 <p class="text-slate-400">يرجى قراءة الشروط بعناية قبل استخدام منصة شبكتي كاردس.</p>
             </div>
 
-            <!-- 1. Privacy Policy (AR) -->
             <div id="ar-privacy" class="glass-panel rounded-3xl p-6 md:p-10 mb-8 shadow-xl">
                 <h2 class="text-2xl font-bold text-cyan-400 mb-6 border-b border-slate-700 pb-4"><i data-lucide="lock" class="inline w-6 h-6 ml-2"></i>أولاً: سياسة الخصوصية</h2>
                 <div class="space-y-6 text-slate-300 leading-relaxed text-sm md:text-base">
@@ -222,6 +220,7 @@
                         <ul class="list-disc list-inside space-y-2">
                             <li><b>البيانات الشخصية:</b> الاسم الرباعي، رقم الهاتف، وتاريخ الميلاد (تُستخدم حصرياً لتوثيق الحسابات واستعادة كلمة المرور).</li>
                             <li><b>سلامة الجهاز ومعرفاته:</b> نجمع معرف الجهاز (ANDROID_ID) ورمز الإشعارات (FCM Token) لمنع الاحتيال وتعدد الحسابات. كما نقوم بفحص حالة حماية الجهاز (Root Check) ونقوم بحظر الأجهزة مكسورة الحماية لحماية المحافظ المالية.</li>
+                            <li><b>البيانات التقنية والاستخدام:</b> عنوان الـ IP، نوع الجهاز، إصدار نظام التشغيل، وسجلات الأعطال (Crash Logs). تُستخدم هذه البيانات حصرياً لتحسين أداء التطبيق، اكتشاف الأخطاء، ومنع الاحتيال.</li>
                             <li><b>صور الهوية (للتجار فقط):</b> للتحقق من قانونية النشاط التجاري وملكية الشبكة.</li>
                             <li><b>بيانات تنفيذ الطلبات:</b> أرقام الهواتف المراد تسديدها، معرفات اللاعبين (Player ID)، ومعرفات المناطق (Zone ID) الخاصة بشحن الألعاب.</li>
                         </ul>
@@ -231,6 +230,7 @@
                         <h3 class="section-title text-white"><i data-lucide="shield-alert" class="w-5 h-5 text-cyan-500"></i> 2. الأذونات الحساسة والتخزين المحلي</h3>
                         <ul class="list-disc list-inside space-y-2">
                             <li><b>إذن الكاميرا:</b> يُستخدم <span class="text-amber-400 font-bold">حصرياً</span> لمسح رموز (QR Codes) لتسهيل تسجيل الدخول للشبكات أو شحن المحفظة. لا نقوم بتسجيل أي فيديو أو التقاط صور في الخلفية.</li>
+                            <li><b>المصادقة البيومترية (البصمة):</b> تُستخدم لقفل التطبيق محلياً. تتم معالجة بيانات بصمتك بشكل آمن داخل جهازك فقط، و<b>لا يتم</b> إرسالها أو تخزينها في خوادمنا أبداً.</li>
                             <li><b>بيانات الموقع (Location):</b> نحن <b>لا نقوم</b> بتتبع موقعك الجغرافي (GPS). يتم البحث عن الشبكات يدوياً عبر اختيار المحافظة والمديرية للحفاظ على خصوصيتك.</li>
                             <li><b>التخزين المحلي (Local Storage):</b> نستخدم ذاكرة هاتفك المحلية لحفظ بيانات تسجيل الدخول والكروت المشتراة (الخزنة) لتتمكن من استخدامها بدون إنترنت.</li>
                         </ul>
@@ -238,12 +238,17 @@
 
                     <section class="bg-red-500/10 p-5 rounded-2xl border-r-4 border-red-500">
                         <h3 class="section-title text-red-400"><i data-lucide="trash-2" class="w-5 h-5"></i> 3. حقوق المستخدم وحذف البيانات</h3>
-                        <p>أنت تملك السيطرة الكاملة على بياناتك. يوفر التطبيق ميزة <b>"حذف الحساب"</b> من داخل صفحة (حسابي). عند طلب الحذف، يقوم نظامنا فوراً بمسح كافة بياناتك الشخصية، سجلاتك الشرائية، وصورك من خوادمنا بشكل نهائي ولا يمكن التراجع عنه.</p>
+                        <p>أنت تملك السيطرة الكاملة على بياناتك. يوفر التطبيق ميزة <b>"حذف الحساب"</b> من داخل صفحة (حسابي).</p>
+                        <ul class="list-disc list-inside space-y-2 mt-2">
+                            <li><b>نطاق الحذف:</b> بالنسبة للعميل العادي، يتم مسح البيانات الشخصية ومعرفات الجهاز نهائياً. أما بالنسبة للتاجر، فيتم مسح البيانات بالإضافة إلى صور الهوية وشعارات الشبكة المرفوعة.</li>
+                            <li><b>الاستثناء القانوني:</b> نحتفظ بسجلات العمليات المالية (مثل الشحن والتسديد) في أرشيف آمن لأغراض المحاسبة، منع الاحتيال، وحل النزاعات المالية وفقاً للقوانين المعمول بها.</li>
+                            <li><b>حذف الحساب من خارج التطبيق:</b> إذا قمت بحذف التطبيق، يمكنك طلب حذف حسابك وبياناتك عبر التواصل مع الدعم الفني عبر الواتساب (+967739100231) أو البريد الإلكتروني (support@shabakati.com)، وسيتم معالجة طلبك خلال 7 أيام عمل.</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h3 class="section-title text-white"><i data-lucide="share-2" class="w-5 h-5 text-cyan-500"></i> 4. مشاركة البيانات مع أطراف ثالثة (APIs)</h3>
-                        <p>نحن <b>لا نبيع</b> بياناتك لأي طرف ثالث. لتنفيذ طلبات شحن الألعاب وتسديد الاتصالات، نقوم بمشاركة (رقم الهاتف المستهدف أو معرف اللاعب) آلياً عبر واجهات برمجة التطبيقات (APIs) مع مزودي الخدمة المعتمدين. هذا الاستخدام مقتصر حصرياً على تنفيذ الطلب بنجاح ولا يُستخدم لأي أغراض تسويقية. كما نستخدم خدمة Google Firebase لإرسال الإشعارات، ويتم نقل جميع بياناتك عبر بروتوكولات تشفير آمنة (<span class="highlight">HTTPS/SSL</span>).</p>
+                        <p>نحن <b>لا نبيع</b> بياناتك لأي طرف ثالث. لتنفيذ طلبات شحن الألعاب وتسديد الاتصالات، نقوم بمشاركة <b>الحد الأدنى والضروري فقط</b> (رقم الهاتف المستهدف أو معرف اللاعب) آلياً عبر واجهات برمجة التطبيقات (APIs) مع مزودي الخدمة المعتمدين. نؤكد أننا لا نشارك اسمك أو رقم هاتفك الشخصي أو كلمة مرورك مع أي طرف ثالث. كما نستخدم خدمة Google Firebase لإرسال الإشعارات، ويتم نقل جميع بياناتك عبر بروتوكولات تشفير آمنة وموثوقة (<span class="highlight">HTTPS/SSL</span>).</p>
                     </section>
 
                     <section>
@@ -252,18 +257,17 @@
                     </section>
 
                     <section class="bg-slate-800/50 p-5 rounded-2xl border-r-4 border-indigo-500">
-                        <h3 class="section-title text-white"><i data-lucide="refresh-cw" class="w-5 h-5 text-indigo-400"></i> 6. تعديل سياسة الخصوصية</h3>
-                        <p>نحتفظ بالحق في تحديث أو تغيير سياسة الخصوصية الخاصة بنا في أي وقت. سيتم إخطار المستخدمين بأي تغييرات جوهرية عبر إشعارات التطبيق أو بتحديث تاريخ "آخر تحديث" في أعلى هذه الصفحة. استمرارك في استخدام التطبيق بعد أي تعديل يعني موافقتك الصريحة على السياسة الجديدة.</p>
+                        <h3 class="section-title text-white"><i data-lucide="refresh-cw" class="w-5 h-5 text-indigo-400"></i> 6. أمن وحماية البيانات وتعديل السياسة</h3>
+                        <p>نحن نستخدم تقنيات تشفير متقدمة لحماية بياناتك أثناء النقل والتخزين. نحتفظ بالحق في تحديث أو تغيير سياسة الخصوصية الخاصة بنا في أي وقت. سيتم إخطار المستخدمين بأي تغييرات جوهرية عبر إشعارات التطبيق أو بتحديث تاريخ "آخر تحديث" في أعلى هذه الصفحة. استمرارك في استخدام التطبيق بعد أي تعديل يعني موافقتك الصريحة على السياسة الجديدة.</p>
                     </section>
 
                     <section class="bg-red-500/10 p-5 rounded-2xl border-r-4 border-red-500">
                         <h3 class="section-title text-red-400"><i data-lucide="baby" class="w-5 h-5"></i> 7. حماية خصوصية الأطفال</h3>
-                        <p>التطبيق مخصص لمن هم فوق 13 عاماً. نحن لا نجمع أي بيانات من الأطفال تحت هذا السن عن علم، وفي حال تبين لنا وجود حساب لمستخدم دون السن القانوني، سيتم حذفه وكافة بياناته فوراً.</p>
+                        <p>التطبيق مخصص لمن هم فوق 13 عاماً. نحن لا نجمع أي بيانات من الأطفال تحت هذا السن عن علم. إذا علمنا أننا جمعنا بيانات شخصية لطفل دون السن القانونية دون موافقة الوالدين، فسنقوم باتخاذ الخطوات اللازمة لحذف تلك المعلومات والحساب من خوادمنا فوراً.</p>
                     </section>
                 </div>
             </div>
 
-            <!-- 2. Terms of Service (AR) -->
             <div id="ar-terms" class="glass-panel rounded-3xl p-6 md:p-10 mb-8 shadow-xl">
                 <h2 class="text-2xl font-bold text-amber-400 mb-6 border-b border-slate-700 pb-4"><i data-lucide="scale" class="inline w-6 h-6 ml-2"></i>ثانياً: شروط الخدمة وإخلاء المسؤولية</h2>
                 <div class="space-y-6 text-slate-300 leading-relaxed text-sm md:text-base">
@@ -306,12 +310,10 @@
                 </div>
             </div>
 
-            <!-- 3. User Guide (AR) -->
             <div id="ar-guide" class="glass-panel rounded-3xl p-6 md:p-10 mb-8 shadow-xl">
                 <h2 class="text-2xl font-bold text-emerald-400 mb-6 border-b border-slate-700 pb-4"><i data-lucide="book-open" class="inline w-6 h-6 ml-2"></i>ثالثاً: دليل الاستخدام الشامل</h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Customer Guide -->
                     <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
                         <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="user" class="text-emerald-400"></i> دليل العملاء</h3>
                         <ul class="space-y-4 text-sm text-slate-300">
@@ -324,7 +326,6 @@
                         </ul>
                     </div>
 
-                    <!-- Merchant Guide -->
                     <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
                         <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="store" class="text-emerald-400"></i> دليل التجار والوكلاء</h3>
                         <ul class="space-y-4 text-sm text-slate-300">
@@ -339,7 +340,6 @@
                 </div>
             </div>
 
-            <!-- 4. FAQ (AR) -->
             <div id="ar-faq" class="glass-panel rounded-3xl p-6 md:p-10 shadow-xl">
                 <h2 class="text-2xl font-bold text-indigo-400 mb-6 border-b border-slate-700 pb-4"><i data-lucide="help-circle" class="inline w-6 h-6 ml-2"></i>رابعاً: الأسئلة الشائعة (FAQ)</h2>
                 <div class="space-y-4 text-sm text-slate-300">
@@ -357,7 +357,7 @@
                     </div>
                     <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-700">
                         <b class="text-indigo-300 block mb-1">س: هل التطبيق آمن؟</b>
-                        <p>ج: نعم، التطبيق يستخدم تشفير عالي المستوى. كما يمكنك تفعيل ميزة "قفل التطبيق" من صفحة حسابك لحماية محفظتك باستخدام البصمة أو رمز مرور خاص، بالإضافة إلى أن النظام يمنع العمل على الأجهزة مكسورة الحماية (Rooted).</p>
+                        <p>ج: نعم، التطبيق يستخدم تشفير عالي المستوى (HTTPS/SSL). كما يمكنك تفعيل ميزة "قفل التطبيق" من صفحة حسابك لحماية محفظتك باستخدام البصمة أو رمز مرور خاص، بالإضافة إلى أن النظام يمنع العمل على الأجهزة مكسورة الحماية (Rooted).</p>
                     </div>
                 </div>
             </div>
@@ -372,7 +372,6 @@
 
     <script>
         lucide.createIcons();
-        // Smooth scrolling for nav links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
